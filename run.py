@@ -91,9 +91,7 @@ def train(epochs=1000, batch_size=10, sample_interval=200):
     print_losses = {"G": [], "D": [], "cPSNR" : []}
     losses_per_epoch = {"G": [], "D": [], "cPSNR" : []}
     for epoch in range(epochs):
-        # with open('output/epoch_{}.csv'.format(epoch), 'w') as csvfile:
-        #     filewriter = csv.writer(csvfile, delimiter=',')
-        #     filewriter.writerow(['Gen_loss1','Gen_loss2','Gen_loss3','Disc_loss1','Disc_loss2','cPSNR'])
+
     # Loop through epochs / iterations
         for iteration in range(data_len//batch_size):
 
@@ -180,7 +178,7 @@ if __name__ == '__main__':
         print('Please insert train or test argument')
         sys.exit(0)
     if sys.argv[1] == 'train':
-        epochs = 3
+        epochs = 10
         train(epochs=epochs, batch_size=4, sample_interval=90)
         print("#"*100)
         print("#"*36," {} Epochs Completed! ".format(epochs),"#"*36)
