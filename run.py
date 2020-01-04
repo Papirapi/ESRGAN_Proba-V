@@ -166,7 +166,7 @@ def test(batch_size = 4):
             plt.imshow(np.squeeze(generated_sr[i]), interpolation='nearest')
             plt.axis('off')        
             plt.tight_layout()
-            fig.savefig("predictions/predict_{}_{}.png".format(i+1, iteration+1))
+            fig.savefig("Predictions/predict_{}_{}.png".format(i+1, iteration+1))
             plt.close(fig)
 
 if __name__ == '__main__':
