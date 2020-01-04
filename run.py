@@ -109,9 +109,6 @@ def train(epochs=1000, batch_size=10, sample_interval=200):
             generator_loss = Esrgan.esrgan.train_on_batch(imgs_lr, [real, features_hr])            
 
             # Save losses            
-            # with open('output/epoch_{}.csv'.format(epoch), 'a') as csvfile:
-            #     filewriter = csv.writer(csvfile, delimiter=',')
-            #     filewriter.writerow([generator_loss[0],generator_loss[1],generator_loss[2],discriminator_loss[0],discriminator_loss[1],cal_cPSNR])
             print_losses['G'].append(generator_loss)
             print_losses['D'].append(discriminator_loss)
             print_losses['cPSNR'].append(cal_cPSNR)
