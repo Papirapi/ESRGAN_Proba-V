@@ -20,8 +20,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 ################ Configure Model ###################
 ####################################################
 #Loading the Data
-load_imgs_hr = np.load('/content/Proba-V/training_set/HR_train.npy')
-load_imgs_lr = np.load('/content/Proba-V/training_set/LR_train.npy')
+load_imgs_hr = np.load('/content/ESRGAN_Proba-V/training_set/HR_train.npy')
+load_imgs_lr = np.load('/content/ESRGAN_Proba-V/training_set/LR_train.npy')
 
 def load_data(batch_size=1):
 
@@ -31,7 +31,7 @@ def load_data(batch_size=1):
     return imgs_hr, imgs_lr
 
 
-log_weight_path= '/content/Proba-V/output/'
+log_weight_path= '/content/ESRGAN_Proba-V/output/'
 dataname='train_genz'
 # instantiate modules
 Esrgan = ESRGAN()
@@ -87,7 +87,7 @@ def train(epochs=1000, batch_size=10, sample_interval=200):
     
 
     #Uncomment the next statement if you want to load from a given trained weights
-    Esrgan.load_weights('/content/Proba-V/weights3/train_genz_generator_X_epoch2.h5', '/content/Proba-V/weights3/train_genz_discriminator_X_epoch2.h5')
+    Esrgan.load_weights('/content/ESRGAN_Proba-V/weights3/train_genz_generator_X_epoch2.h5', '/content/ESRGAN_Proba-V/weights3/train_genz_discriminator_X_epoch2.h5')
     print_losses = {"G": [], "D": [], "cPSNR" : []}
     losses_per_epoch = {"G": [], "D": [], "cPSNR" : []}
     for epoch in range(epochs):
@@ -146,8 +146,8 @@ def train(epochs=1000, batch_size=10, sample_interval=200):
         del print_losses
         del losses_per_epoch
 def test(batch_size = 4):
-    gen_model = load_model('/content/Proba-V/models/train_genz_generator_model_X_epoch2.h5', custom_objects = {'cPSNR' : Esrgan.cPSNR})
-    load_imgs_lr = np.load('/content/Proba-V/LR_test.npy')
+    gen_model = load_model('/content/ESRGAN_Proba-V/models/train_genz_generator_model_X_epoch2.h5', custom_objects = {'cPSNR' : Esrgan.cPSNR})
+    load_imgs_lr = np.load('/content/ESRGAN_Proba-V/LR_test.npy')
     data_len = len(load_imgs_lr)
     limit = 0
     for iteration in range(data_len//batch_size):
