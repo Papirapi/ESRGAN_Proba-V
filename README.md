@@ -150,6 +150,14 @@ At some point, my generator is getting new ways to improve the quality of SR, an
 
 This figure shows the mean value of cPSNR during the training phase for each epoch. The cPSNR is getting better and better over the epochs starting from 17 to reach 31 at epoch 115.
 
+You can download the images generated during training [link](https://drive.google.com/open?id=1z9VH2bwPwePWs8I2zntB5eME2lv3HhKI).<br/>
+You can also download the generated SR images from test folder (model-epoch-111) [link](https://drive.google.com/open?id=1_i_nBJjed6A0-z9w6pfdVcPRIZ1TjEgX).
+
+To launch this project:<br/>
+  1st. execute *preprocessing.ipynb*
+  2nd. python3 run.py train
+  3rd. python3 run.py test
+
 ## Future Work :
 1. Employ relativistic average GAN (RAGAN) instead of the vanilla GAN.
 2. Create a new training set using the ESRGAN model (generate SRs from LRs to enhance the image quality), then I will use the SRs and respective HRs to train a new SRGAN model.
