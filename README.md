@@ -25,3 +25,26 @@ The main goal of this competition is to construct such high-resolution images by
 This process, which is known as Multi-image Super Resolution has already been applied to satellite before. <br/>
 The images provided for this challenge are not artificially degraded, but are real images recorded from the very same scene, just at different resolutions and different times. Any improvements on this data-set might be transferable to larger collections of remote sensing data without the need to deploy more expensive sensors or satellites, as resolution enhancement can happen post-acquisition.<br/>
 So, the goal is the enhancement of the vision PROBA-V and helping researchers advance the accuracy on monitoring earths vegetation growth.<br/>
+
+## DATASET
+The Data is composed of radiometrically and geometrically corrected TOA (Top of Atmosphere) reflectance’s for the RED and NIR spectral bands at *300m* and *100m* resolution.<br/>
+The *300m* resolution data delivered as *128x128* grey-scale pixel images, the *100m* resolution data as *384x384* grey-scale pixel images.<br/>
+The bit-depth of the images is 14, but the are saved in 16-bit .png format.<br/>
+The dataset contains 1450 scenes, which are split into 1160 scenes for training and 290 for testing.<br/>
+Each scene contains at least 9 low resolution images and max of 34 images (LR*), their respective status map (QM*) and one high resolution (HR*) and its respective status map (SM*).<br/>
+Once you unzip the probav_data.zip you will get the following path: 
+* Proba-V / test / NIR / scenes / LR + QM
+* Proba-V / test / RED / scenes / LR + QM
+* Proba-V / train / NIR / scenes / LR + QM + HR + SM
+* Proba-V / train / RED / scenes / LR + QM + HR + SM
+* Proba-V / norm.csv
+
+## My own Approach
+I will detail my reasoning and finding when attempting the Proba-V super resolution competition. (competition is already over).
+This project was made in 2 steps:
+1. Preparing the data: Images preprocessing
+2. Training the model and then deploying it (Test)
+After looking on previous works that been done on Proba-V super resolution competition and while attempting to make a new approach I decide to use a modified version of ESRGAN (Enhanced Super Resolution Gan) which is already a modified version of SRGAN in order to tackle the problem.<br/>
+Details can be found in these two links: 
+* [SRGAN] (https://arxiv.org/pdf/1609.04802.pdf)
+* [ESRGAN] (https://arxiv.org/pdf/1809.00219.pdf)
