@@ -154,9 +154,9 @@ You can download the images generated during training [link](https://drive.googl
 You can also download the generated SR images from test folder (model-epoch-111) [link](https://drive.google.com/open?id=1_i_nBJjed6A0-z9w6pfdVcPRIZ1TjEgX).
 
 To launch this project:<br/>
-  1st. execute *preprocessing.ipynb*<br/>
-  2nd. python3 run.py train<br/>
-  3rd. python3 run.py test
+1. execute *preprocessing.ipynb*
+2. python3 run.py train
+3. python3 run.py test
 
 ## Future Work :
 1. Employ relativistic average GAN (RAGAN) instead of the vanilla GAN.
