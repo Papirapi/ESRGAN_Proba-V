@@ -48,3 +48,29 @@ After looking on previous works that been done on Proba-V super resolution compe
 Details can be found in these two links: 
 * [SRGAN] (https://arxiv.org/pdf/1609.04802.pdf)
 * [ESRGAN] (https://arxiv.org/pdf/1809.00219.pdf)
+<p align="center">
+  <img src="figures/Capture1.PNG">
+</p>
+While creating ESRGAN model, I skipped the 2nd aspect: which is the use of RAGAN.<br/>
+Next version of the project will contain RAGAN.
+
+## Preparing the Data: (Preprocessing.ipynb)
+In order to have one candidate image using multiple low resolution (LR) images, some preprocessing steps were necessary.<br/>
+<p align="center">
+  <img src="figures/aggregation.png">
+</p>
+
+Some images in the dataset are partially obstructed (Clouds, Ice…) and up to *25%* of pixels can be concealed (*40%* for low resolution images) thus, increasing the need of using multiple low-resolution images.<br/>
+The images are a representation of two spectral bands (RED and NIR). <br/>
+The images are stored in a uint16 bit format as PNGs and are supposed to be of 14bit-depth.<br/>
+So, my initial pipeline process was the following:
+#### For Low Resolution (Train & Test):
+1. Loading the images as uint16
+2. Using the norm.csv to normalize cPSNR
+3. Parsing the dataset and checking for high pixels in order to remove them, since the images are stored in a uint16.
+4. Decomposing the status map (QM) into 8 patches and searching for the best score among all QMs to generate candidate patches that will be used to construct the candidate image (Respective LR patches to QM patches).
+5. Saving the created candidate LR as float64 image and shifting it to 14bits.
+6. Creating an RGB representation of a grey-level image using the gray2rgb function.
+7. Saving LRs as np.array
+**PS**: Since I’m low on memory I processed each band on it own and then I combine them into a single np.array ‘LR_train.npy’ and ‘LR_test.npy’
+#### For High Resolution (Only Train):
