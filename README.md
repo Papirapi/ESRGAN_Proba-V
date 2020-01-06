@@ -72,12 +72,14 @@ So, my initial pipeline process was the following:
 5. Saving the created candidate LR as float64 image and shifting it to 14bits.
 6. Creating an RGB representation of a grey-level image using the gray2rgb function.
 7. Saving LRs as np.array
+
 **PS**: Since I’m low on memory I processed each band on it own and then I combine them into a single np.array ‘LR_train.npy’ and ‘LR_test.npy’
 #### For High Resolution (Only Train):
 1. Loading HR images as uint16
 2. Shifting them by two to 14bits
 3. Creating an RGB representation of a grey-level image using the gray2rgb function.
 4. Saving HRs as np.array 
+
 **PS**: Since I’m low on memory I processed each band on its own and then I combine them into a single np.array ‘HR_train.npy’.
 
 You may ask why converting both HR and LR from gray2rgb, well the only one that need to be really converted is HR and that’s because VGG19 that’s used as feature extractor requires as input shape *(224,224 ,**3**)* and it should have an input of EXACTLY *3* channels, and width and height should be no smaller than *32*.
@@ -148,6 +150,6 @@ At some point, my generator is getting new ways to improve the quality of SR, an
 
 This figure shows the mean value of cPSNR during the training phase for each epoch. The cPSNR is getting better and better over the epochs starting from 17 to reach 31 at epoch 115.
 
-Future Work :
+## Future Work :
 1. Employ relativistic average GAN (RAGAN) instead of the vanilla GAN.
 2. Create a new training set using the ESRGAN model (generate SRs from LRs to enhance the image quality), then I will use the SRs and respective HRs to train a new SRGAN model.
