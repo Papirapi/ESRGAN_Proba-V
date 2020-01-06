@@ -34,19 +34,15 @@ class ESRGAN():
         # Build & compile the generator network
         self.generator = self.build_generator()
         self.compile_generator(self.generator)
-        # Learning rates
-        
 
         self.loss_weights = loss_weights
 
-        if training_mode:
-            self.vgg = self.build_vgg()
-            self.compile_vgg(self.vgg)
-            self.discriminator = self.build_discriminator()
-            self.compile_discriminator(self.discriminator)
-            self.esrgan = self.build_esrgan()
-            self.compile_esrgan(self.esrgan)
-
+        self.vgg = self.build_vgg()
+        self.compile_vgg(self.vgg)
+        self.discriminator = self.build_discriminator()
+        self.compile_discriminator(self.discriminator)
+        self.esrgan = self.build_esrgan()
+        self.compile_esrgan(self.esrgan)
 
     def build_vgg(self):
         """
