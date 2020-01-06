@@ -1,1 +1,1 @@
-Repo where you can the weights that will be loaded to pursuit training phase
+Repo where you the weights will be loaded to pursuit training phase
