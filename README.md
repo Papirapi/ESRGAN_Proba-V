@@ -25,6 +25,7 @@ The main goal of this competition is to construct such high-resolution images by
 This process, which is known as Multi-image Super Resolution has already been applied to satellite before. <br/>
 The images provided for this challenge are not artificially degraded, but are real images recorded from the very same scene, just at different resolutions and different times. Any improvements on this data-set might be transferable to larger collections of remote sensing data without the need to deploy more expensive sensors or satellites, as resolution enhancement can happen post-acquisition.<br/>
 So, the goal is the enhancement of the vision PROBA-V and helping researchers advance the accuracy on monitoring earths vegetation growth.<br/>
+For more details: https://kelvins.esa.int/proba-v-super-resolution/home/
 
 ## DATASET
 The Data is composed of radiometrically and geometrically corrected TOA (Top of Atmosphere) reflectance’s for the RED and NIR spectral bands at *300m* and *100m* resolution.<br/>
