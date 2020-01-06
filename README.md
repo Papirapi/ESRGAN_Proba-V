@@ -155,8 +155,8 @@ You can also download the generated SR images from test folder (model-epoch-111)
 
 To launch this project:<br/>
 1. execute *preprocessing.ipynb*
-2. python3 run.py train
-3. python3 run.py test
+2. *python3 run.py train*
+3. *python3 run.py test*
 
 ## Future Work :
 1. Employ relativistic average GAN (RAGAN) instead of the vanilla GAN.
