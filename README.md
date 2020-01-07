@@ -111,7 +111,7 @@ That’s why I have used batch_size equal to 4 and not 2 to reduce the number of
 * You can uncomment the lines that are related to creating and storing the cPSNR and Gen & Disc losses if you just trying to visualize and see how this project works.
 * Just get access to a better platform than Colab  :smirk:.
 
-To visualize how the model is doing, I’ have created a visualization function that will guide me through the training process by plotting images that contains (Low Resolution (**left**), Super Resolution (**middle**), High Resolution (**right**).
+To visualize how the model is doing, I’ have created a visualization function that will guide me through the training process by plotting images that contains (Low Resolution (**left**), Super Resolution (**middle**), High Resolution (**right**)).
 
 I wanted to compute the cPSNR value and to do so I will have to make both SR and HR same type, so I decided to just change HR type to float32 just after loading the ‘LR_train.npy’ and ‘HR_train.npy’.
 
