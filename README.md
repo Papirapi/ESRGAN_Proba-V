@@ -125,6 +125,7 @@ Example when LR image shape is *(128,128,**1**)*, SR and HR images shape is *(38
 <p align="center">
   <img src="figures/single_channel.png">
 </p>
+
 The results were decent and that’s why I have tried to change even the LRs images using grey2rgb function so I can see if there are some improvements in the quality of enhancement.<br/>
 What I have conclude during these tests, is the fact that the generator is getting better and better while using LRs with shape (128,128,**3**) quicker than when using LRs with shape *(128,128,**1**)*.<br/>
 Example when LR image shape is *(128,128,**3**)*, SR and HR images shape is *(384,384,**3**)*:
