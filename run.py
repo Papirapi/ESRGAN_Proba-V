@@ -73,7 +73,7 @@ def eval_generated_images(epoch, generator, iteration,  examples=1 , dim=(1, 3),
 
     return cPSNR
 ###################################################
-################ Training Esrgan  ##################
+################ Training Esrgan  #################
 ###################################################
 
 def train(epochs=1000, batch_size=10, sample_interval=200):
@@ -194,6 +194,7 @@ if __name__ == '__main__':
     #  VRAM available on Colab and 25GB RAM CPU.
     #  Due to the fact that Colab crashs often,I have divided the training
     #  into mini-training where epochs = 10 
+    # PS: Colab can't reach 25Go anymore 12Go is the cap
     # ------------------------------------------------------------------------
 
 
