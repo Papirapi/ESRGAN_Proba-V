@@ -97,19 +97,19 @@ PSNR is a measure of the distortion of the image based on the MSE (Mean Square E
 For this competition PSNR is modified to cPSNR (Clear Peak Signal Noise Ratio) and instead of using MSE I used the cMSE (Clear Mean Square Error) which compute the MSE only for unconcealed pixels and consider the brightness bias.
 
 ## Training: (python3 run.py train)
-This phase was a little bit restricted by the resources, since I’m running and testing my scripts on Google Colab. (Got banned for a while for successive use  :expressionless:) <br/>
+This phase was a little bit restricted by the resources, since I’m running and testing my scripts on Google Colab. (Got banned for a while for successive use) <br/>
 My goal was to train the model for *1000+* epochs but due to the low resources I just made it to 100+epochs.<br/>
 Comments will guide you through my code and you can start train from 0 (just comment line 90) or load from a given weights (keep the line 90 uncommented).<br/>
 Through training process, in every iteration, I’m saving cPSNR value, Generator and Discriminator losses.
 
 *(Attention!!!)*<br/>
-Python is accumulating memory so I’m clearing out the dictionaries where I’m saving cPSNR, Gen & Disc losses and it cause Colab memory to explode even while using the *25Go* RAM option  :unamused:.<br/>
+Python is accumulating memory so I’m clearing out the dictionaries where I’m saving cPSNR, Gen & Disc losses and it cause Colab memory to explode even while using the *25Go* RAM option.<br/>
 That’s why I have used batch_size equal to 4 and not 2 to reduce the number of variables that I’m generating every iteration (290 iterations instead of 580).
 
 *(Temporary Solution!!!)*<br/>
 * You can reduce the number of epochs to 3 and then load them and start over and over.
 * You can uncomment the lines that are related to creating and storing the cPSNR and Gen & Disc losses if you just trying to visualize and see how this project works.
-* Just get access to a better platform than Colab  :smirk:.
+* Just get access to a better platform than Colab .
 
 To visualize how the model is doing, I’ have created a visualization function that will guide me through the training process by plotting images that contains (Low Resolution (**left**), Super Resolution (**middle**), High Resolution (**right**)).
 
