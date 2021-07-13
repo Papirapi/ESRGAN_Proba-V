@@ -21,7 +21,7 @@ For more details: https://www.esa.int/Applications/Observing_the_Earth/Proba-V
 Proba-V Super Resolution has been launched on the 1st of November 2018 with a timeline of 8 months to get an end at the 1st of June 2019. <br/>
 In this competition multiple images are given of each of the 74 Earth locations and challengers were asked to develop an algorithm to fuse them together into a single image. <br/>
 The result will be a “Super-Resolved” image that is checked against a “High Resolution” image taken from the same satellite PROBA-V. <br/>
-The main goal of this competition is to construct such high-resolution images by fusion of the more frequent 300m images.<br/>
+The main goal of this project is to construct such high-resolution images by fusion of the more frequent 300m images.<br/>
 This process, which is known as Multi-image Super Resolution has already been applied to satellite before. <br/>
 The images provided for this challenge are not artificially degraded, but are real images recorded from the very same scene, just at different resolutions and different times. Any improvements on this data-set might be transferable to larger collections of remote sensing data without the need to deploy more expensive sensors or satellites, as resolution enhancement can happen post-acquisition.<br/>
 So, the goal is the enhancement of the vision PROBA-V and helping researchers advance the accuracy on monitoring earths vegetation growth.<br/>
