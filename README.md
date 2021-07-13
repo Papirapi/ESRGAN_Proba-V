@@ -6,11 +6,11 @@ Proba-V is a miniaturized ESA satellite tasked with a full-scale mission: to map
 It operates on a sun-synchronous near polar Earth orbit at about 820Km guaranteeing the required swath of 2250Km with an instrument field of view of 102 degrees, compatible with the geographical coverage.<br/>
 The Proba-V satellite carries a new Vegetation instrument, as single operational payload.<br/>
 In the frame of the In-Orbit Demonstration, the Proba-V platform also flies 5 technological payloads:
-* X-Band  transmitter based on GaN RF amplifier,
-* Energetic  Particle Telescope EPT,
-* Automatic  Dependent Surveillance Broadcast (ADS-B) receiver,
-* SATRAM  radiation monitoring system, complementing EPT,
-* HERMOD  (fiber optic connectivity in-situ testing).
+*X-Band  transmitter based on GaN RF amplifier,
+*Energetic  Particle Telescope EPT,
+*Automatic  Dependent Surveillance Broadcast (ADS-B) receiver,
+*SATRAM  radiation monitoring system, complementing EPT,
+*HERMOD  (fiber optic connectivity in-situ testing).
 
 The Proba-V mission provides multispectral images to study the evolution of the vegetation cover on a daily and global basis.<br/>
 The ‘V’ stands for Vegetation, and the mission is extending the data set of the long-established Vegetation instrument, flown as a secondary payload aboard France’s SPOT-4 and SPOT-5 satellites launched in 1998 and 2002 respectively.<br/>
