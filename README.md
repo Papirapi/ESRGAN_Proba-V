@@ -92,9 +92,9 @@ The Generator is adopting a deeper model using RRDB (Residual-in-Residual Dense 
 The Discriminator is the same as vanilla GAN discriminator: his purpose is to distinguish SR from HR.<br/>
 
 ### Losses:
-The competition scores Super Resolution SRs using a modified PSNR (Peak Signal Noise Ratio) that consider which pixel was concealed or not in the High-Resolution image HR.<br/>
+The scores Super Resolution SRs using a modified PSNR (Peak Signal Noise Ratio) that consider which pixel was concealed or not in the High-Resolution image HR.<br/>
 PSNR is a measure of the distortion of the image based on the MSE (Mean Square Error) between the reconstructed image and the original image.<br/>
-For this competition PSNR is modified to cPSNR (Clear Peak Signal Noise Ratio) and instead of using MSE I used the cMSE (Clear Mean Square Error) which compute the MSE only for unconcealed pixels and consider the brightness bias.
+For this project PSNR is modified to cPSNR (Clear Peak Signal Noise Ratio) and instead of using MSE I used the cMSE (Clear Mean Square Error) which compute the MSE only for unconcealed pixels and consider the brightness bias.
 
 ## Training: (python3 run.py train)
 This phase was a little bit restricted by the resources, since I’m running and testing my scripts on Google Colab. (Got banned for a while for successive use) <br/>
