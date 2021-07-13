@@ -17,8 +17,8 @@ The ‘V’ stands for Vegetation, and the mission is extending the data set of 
 The Proba-V mission has been developed in the frame of the ESA General Support Technology Program GSTP and the contributors to the Proba-V mission are Belgium and Luxembourg.<br/>
 For more details: https://www.esa.int/Applications/Observing_the_Earth/Proba-V
 
-## Proba-V Super Resolution Competition
-Proba-V Super Resolution Competition has been launched on the 1st of November 2018 with a timeline of 8 months to get an end at the 1st of June 2019. <br/>
+## Proba-V Super Resolution 
+Proba-V Super Resolution has been launched on the 1st of November 2018 with a timeline of 8 months to get an end at the 1st of June 2019. <br/>
 In this competition multiple images are given of each of the 74 Earth locations and challengers were asked to develop an algorithm to fuse them together into a single image. <br/>
 The result will be a “Super-Resolved” image that is checked against a “High Resolution” image taken from the same satellite PROBA-V. <br/>
 The main goal of this competition is to construct such high-resolution images by fusion of the more frequent 300m images.<br/>
