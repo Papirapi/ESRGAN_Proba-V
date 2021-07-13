@@ -41,11 +41,11 @@ Once you unzip the probav_data.zip you will get the following path:
 * Proba-V / norm.csv
 
 ## My own Approach
-I will detail my reasoning and finding when attempting the Proba-V super resolution competition. (competition is already over).
+I will detail my reasoning and finding when attempting the Proba-V super resolution Project.
 This project was made in 2 steps:
 1. Preparing the data: Images preprocessing
 2. Training the model and then deploying it (Test)
-After looking on previous works that been done on Proba-V super resolution competition and while attempting to make a new approach I decide to use a modified version of ESRGAN (Enhanced Super Resolution Gan) which is already a modified version of SRGAN in order to tackle the problem.<br/>
+After looking on previous works that been done on Proba-V super resolution projects and while attempting to make a new approach I decide to use a modified version of ESRGAN (Enhanced Super Resolution Gan) which is already a modified version of SRGAN in order to tackle the problem.<br/>
 Details can be found in these two links: 
 * [SRGAN](https://arxiv.org/pdf/1609.04802.pdf)
 * [ESRGAN](https://arxiv.org/pdf/1809.00219.pdf)
