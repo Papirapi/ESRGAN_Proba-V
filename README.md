@@ -1,5 +1,5 @@
 # ESRGAN_Proba-V
-Tackling Proba-V competition with a modified version of ESRGAN.
+Tackling Proba-V project with a modified version of ESRGAN.
 
 ## About Proba-V
 Proba-V is a miniaturized ESA satellite tasked with a full-scale mission: to map land cover and vegetation growth across the entire earth every two days. It is the latest in ESA’s Proba series of minisatellites, among the smallest satellites launched by the agency.<br/>
@@ -19,7 +19,7 @@ For more details: https://www.esa.int/Applications/Observing_the_Earth/Proba-V
 
 ## Proba-V Super Resolution 
 Proba-V Super Resolution has been launched on the 1st of November 2018 with a timeline of 8 months to get an end at the 1st of June 2019. <br/>
-In this competition multiple images are given of each of the 74 Earth locations and challengers were asked to develop an algorithm to fuse them together into a single image. <br/>
+In this project multiple images are given of each of the 74 Earth locations and challengers were asked to develop an algorithm to fuse them together into a single image. <br/>
 The result will be a “Super-Resolved” image that is checked against a “High Resolution” image taken from the same satellite PROBA-V. <br/>
 The main goal of this project is to construct such high-resolution images by fusion of the more frequent 300m images.<br/>
 This process, which is known as Multi-image Super Resolution has already been applied to satellite before. <br/>
